@@ -33,4 +33,10 @@ install:
     - cpanm HTML::FormatText::WithLinks::AndTables Net::CIDR JSON
     - cpanm UNIVERSAL::require Email::Address Plack::Handler::Starlet
     - cpanm Net::SSL Crypt::SSLeay
+    - cpanm MIME::Types
+    - cpanm FCGI::ProcManager FCGI
+    - cpanm PerlIO::eol GnuPG::Interface
+    - cpanm Data::ICal
+    - cpanm String::ShellQuote Crypt::X509
+    - cpanm Convert::Color
     - make testdeps
