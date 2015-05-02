@@ -16,7 +16,6 @@ install:
     - cd rt
     - autoreconf
     - ./configure --with-db-type=SQLite
-      #- make testdeps
     - cpanm -n HTML::Mason
     - cpanm -n Apache::Session
     - cpanm CGI::Emulate::PSGI Text::Quoted Regexp::IPv6
@@ -33,3 +32,5 @@ install:
     - cpanm Email::Address::List Text::Wrapper Regexp::Common::net::CIDR
     - cpanm HTML::FormatText::WithLinks::AndTables Net::CIDR JSON
     - cpanm UNIVERSAL::require Email::Address Plack::Handler::Starlet
+    - cpanm Net::SSL Crypt::SSLeay
+    - make testdeps
