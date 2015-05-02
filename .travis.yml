@@ -16,7 +16,7 @@ install:
     - cd rt
     - autoreconf
     - ./configure --with-db-type=SQLite
-    - cpanm Encode Crypt::Eksblowfish Module::Versions::Report
+    - cpanm Cache::Cache Encode Crypt::Eksblowfish Module::Versions::Report
     - cpanm DBI Text::Password::Pronounceable Time::ParseDate Tree::Simple
     - cpanm HTML::Scrubber HTML::Quoted Mail::Mailer Data::GUID HTML::Mason
     - cpanm Symbol::Global::Name DateTime::Format::Natural Plack
