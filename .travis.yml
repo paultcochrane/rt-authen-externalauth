@@ -40,3 +40,6 @@ install:
     - cpanm String::ShellQuote Crypt::X509
     - cpanm Convert::Color
     - make testdeps
+    - sudo make install
+    - cd ..
+    - ls
