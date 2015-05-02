@@ -16,5 +16,24 @@ install:
     - cd rt
     - autoreconf
     - ./configure --with-db-type=SQLite
-    - perl -MCPAN -e shell
-    - make fixdeps
+    - cpanm Encode Crypt::Eksblowfish Module::Versions::Report \
+      DBI Text::Password::Pronounceable Time::ParseDate Tree::Simple \
+      HTML::Scrubber HTML::Quoted Mail::Mailer Data::GUID HTML::Mason \
+      Symbol::Global::Name DateTime::Format::Natural Plack \
+      Text::Wrapper Regexp::Common::net::CIDR HTML::FormatText::WithLinks::AndTables \
+      CGI::Emulate::PSGI Text::Quoted Regexp::IPv6 CSS::Squish CGI::PSGI \
+      Apache::Session Date::Extract HTML::Mason::PSGIHandler \
+      MIME::Entity Locale::Maketext::Lexicon Module::Refresh \
+      Role::Basic Date::Manip HTML::RewriteAttributes XML::RSS \
+      Text::WikiFormat DBIx::SearchBuilder Regexp::Common \
+      HTML::FormatText::WithLinks Mail::Header Locale::Maketext::Fuzzy \
+      Email::Address::List Net::CIDR UNIVERSAL::require Plack::Handler::Starlet
+    - cpanm FCGI::ProcManager FCGI
+    - cpanm GD::Text GD GD::Graph
+    - cpanm PerlIO::eol GnuPG::Interface
+    - cpanm GraphViz
+    - cpanm Data::ICal
+    - cpanm Crypt::SSLeay Net::SSL
+    - cpanm String::ShellQuote Crypt::X509
+    - cpanm Convert::Color
+    - make testdeps
