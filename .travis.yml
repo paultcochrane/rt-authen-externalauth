@@ -16,4 +16,5 @@ install:
     - cd rt
     - autoreconf
     - ./configure --with-db-type=SQLite
+    - perl -MCPAN -e shell
     - make fixdeps
