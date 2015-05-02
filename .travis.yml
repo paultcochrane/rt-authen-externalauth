@@ -16,8 +16,9 @@ install:
     - cd rt
     - autoreconf
     - ./configure --with-db-type=SQLite
-    - make testdeps
-    - cpanm CGI::Emulate::PSGI Text::Quoted Regexp::IPv6 Encode
+      #- make testdeps
+    - cpanm CGI::Emulate::PSGI Text::Quoted Regexp::IPv6
+    - cpanm Class::Accessor::Fast Encode
     - cpanm Crypt::Eksblowfish CSS::Squish CGI::PSGI Module::Versions::Report
     - cpanm Apache::Session Date::Extract HTML::Mason::PSGIHandler MIME::Entity
     - cpanm Locale::Maketext::Lexicon Role::Basic Module::Refresh
@@ -26,7 +27,7 @@ install:
     - cpanm HTML::Quoted XML::RSS Text::WikiFormat DBIx::SearchBuilder
     - cpanm Mail::Mailer Data::GUID Regexp::Common HTML::Mason
     - cpanm HTML::FormatText::WithLinks Symbol::Global::Name
-    - cpanm DateTime::Format::Natural Mail::Header Locale::Maketext::Fuzzy
+    - cpanm DateTime::Format::Natural Plack Mail::Header Locale::Maketext::Fuzzy
     - cpanm Email::Address::List Text::Wrapper Regexp::Common::net::CIDR
-    - cpanm HTML::FormatText::WithLinks::AndTables Net::CIDR
-    - cpanm UNIVERSAL::require Plack::Handler::Starlet
+    - cpanm HTML::FormatText::WithLinks::AndTables Net::CIDR JSON
+    - cpanm UNIVERSAL::require Email::Address Plack::Handler::Starlet
