@@ -16,24 +16,17 @@ install:
     - cd rt
     - autoreconf
     - ./configure --with-db-type=SQLite
-    - cpanm Cache::Cache Encode Crypt::Eksblowfish Module::Versions::Report
-    - cpanm DBI Text::Password::Pronounceable Time::ParseDate Tree::Simple
-    - cpanm HTML::Scrubber HTML::Quoted Mail::Mailer Data::GUID HTML::Mason
-    - cpanm Symbol::Global::Name DateTime::Format::Natural Plack
-    - cpanm Text::Wrapper Regexp::Common::net::CIDR HTML::FormatText::WithLinks::AndTables
-    - cpanm CGI::Emulate::PSGI Text::Quoted Regexp::IPv6 CSS::Squish CGI::PSGI
-    - cpanm Apache::Session Date::Extract HTML::Mason::PSGIHandler
-    - cpanm MIME::Entity Locale::Maketext::Lexicon Module::Refresh
-    - cpanm Role::Basic Date::Manip HTML::RewriteAttributes XML::RSS
-    - cpanm Text::WikiFormat DBIx::SearchBuilder Regexp::Common
-    - cpanm HTML::FormatText::WithLinks Mail::Header Locale::Maketext::Fuzzy
-    - cpanm Email::Address::List Net::CIDR UNIVERSAL::require Plack::Handler::Starlet
-    - cpanm FCGI::ProcManager FCGI
-    - cpanm GD::Text GD GD::Graph
-    - cpanm PerlIO::eol GnuPG::Interface
-    - cpanm GraphViz
-    - cpanm Data::ICal
-    - cpanm Crypt::SSLeay Net::SSL
-    - cpanm String::ShellQuote Crypt::X509
-    - cpanm Convert::Color
     - make testdeps
+    - cpanm CGI::Emulate::PSGI Text::Quoted Regexp::IPv6 Encode
+    - cpanm Crypt::Eksblowfish CSS::Squish CGI::PSGI Module::Versions::Report
+    - cpanm Apache::Session Date::Extract HTML::Mason::PSGIHandler MIME::Entity
+    - cpanm Locale::Maketext::Lexicon Role::Basic Module::Refresh
+    - cpanm Text::Password::Pronounceable Time::ParseDate Date::Manip
+    - cpanm HTML::RewriteAttributes Tree::Simple HTML::Scrubber
+    - cpanm HTML::Quoted XML::RSS Text::WikiFormat DBIx::SearchBuilder
+    - cpanm Mail::Mailer Data::GUID Regexp::Common HTML::Mason
+    - cpanm HTML::FormatText::WithLinks Symbol::Global::Name
+    - cpanm DateTime::Format::Natural Mail::Header Locale::Maketext::Fuzzy
+    - cpanm Email::Address::List Text::Wrapper Regexp::Common::net::CIDR
+    - cpanm HTML::FormatText::WithLinks::AndTables Net::CIDR
+    - cpanm UNIVERSAL::require Plack::Handler::Starlet
