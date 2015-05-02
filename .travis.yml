@@ -42,4 +42,5 @@ install:
     - make testdeps
     - sudo make install
     - cd ..
-    - ls
+    - cpanm Net::LDAP
+    - perl Makefile.PL
