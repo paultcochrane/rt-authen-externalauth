@@ -17,6 +17,7 @@ install:
     - autoreconf
     - ./configure --with-db-type=SQLite
       #- make testdeps
+    - cpanm -n HTML::Mason
     - cpanm CGI::Emulate::PSGI Text::Quoted Regexp::IPv6
     - cpanm Class::Accessor::Fast Encode
     - cpanm Crypt::Eksblowfish CSS::Squish CGI::PSGI Module::Versions::Report
@@ -25,7 +26,7 @@ install:
     - cpanm Text::Password::Pronounceable Time::ParseDate Date::Manip
     - cpanm HTML::RewriteAttributes Tree::Simple HTML::Scrubber
     - cpanm HTML::Quoted XML::RSS Text::WikiFormat DBIx::SearchBuilder
-    - cpanm Mail::Mailer Data::GUID Regexp::Common HTML::Mason
+    - cpanm Mail::Mailer Data::GUID Regexp::Common
     - cpanm HTML::FormatText::WithLinks Symbol::Global::Name
     - cpanm DateTime::Format::Natural Plack Mail::Header Locale::Maketext::Fuzzy
     - cpanm Email::Address::List Text::Wrapper Regexp::Common::net::CIDR
