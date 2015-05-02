@@ -12,8 +12,8 @@ perl:
 
 install:
     - sudo apt-get install autoconf sqlite3
-    - git clone git://github.com/bestpractical/rt.git -b stable
-    - cd rt
+    - git clone git://github.com/bestpractical/rt.git -b stable /tmp/rt
+    - cd /tmp/rt
     - autoreconf
     - ./configure --with-db-type=SQLite
     - cpanm -n HTML::Mason
@@ -41,6 +41,6 @@ install:
     - cpanm Convert::Color
     - make testdeps
     - sudo make install
-    - cd ..
+    - cd -
     - cpanm Net::LDAP
     - perl Makefile.PL
