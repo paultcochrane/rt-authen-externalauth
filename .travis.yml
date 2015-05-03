@@ -41,6 +41,7 @@ install:
     - cpanm Convert::Color
     - make testdeps
     - sudo make install
+    - sudo make initialize-database
     - cd -
     - cpanm Net::LDAP
     - perl Makefile.PL
