@@ -48,6 +48,7 @@ install:
     - cd -
     - cpanm Net::LDAP
     - cpanm Log::Dispatch::Perl
+    - cpanm Net::LDAP::Server::Test
     - perl Makefile.PL
 
 script:
