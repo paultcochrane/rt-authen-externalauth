@@ -46,4 +46,4 @@ install:
     - perl Makefile.PL
 
 script:
-    - prove -lr xt
+    - RTHOME=/opt/rt4/lib prove -lr xt
