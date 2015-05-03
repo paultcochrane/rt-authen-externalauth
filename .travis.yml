@@ -41,6 +41,7 @@ install:
     - cpanm Convert::Color
     - make testdeps
     - sudo make install
+    - sudo chmod +r /opt/rt4/etc/RT_Config.pm
     - sudo make initialize-database
     - cd -
     - cpanm Net::LDAP
