@@ -15,7 +15,7 @@ install:
     - git clone git://github.com/bestpractical/rt.git -b stable /tmp/rt
     - cd /tmp/rt
     - autoreconf
-    - ./configure --with-db-type=SQLite
+    - ./configure --with-db-type=SQLite --with-my-user-group
     - cpanm -n HTML::Mason
     - cpanm -n Apache::Session
     - cpanm CGI::Emulate::PSGI Text::Quoted Regexp::IPv6
@@ -40,9 +40,11 @@ install:
     - cpanm String::ShellQuote Crypt::X509
     - cpanm Convert::Color
     - make testdeps
+    - sudo mkdir -p /opt/rt4
+    - sudo chmod -R $USER:$USER /opt/rt4
     - sudo make install
-    - sudo chmod +r /opt/rt4/etc/RT_Config.pm
-    - sudo make initialize-database
+      #- sudo chmod +r /opt/rt4/etc/RT_Config.pm
+      #- sudo make initialize-database
     - cd -
     - cpanm Net::LDAP
     - cpanm Log::Dispatch::Perl
