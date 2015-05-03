@@ -45,6 +45,7 @@ install:
     - sudo make initialize-database
     - cd -
     - cpanm Net::LDAP
+    - cpanm Log::Dispatch::Perl
     - perl Makefile.PL
 
 script:
